@@ -1,0 +1,22 @@
+services:
+  db-postgres:
+    build: .
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - pgdata_postgres:/var/lib/postgresql/data
+      - ./sql:/sql  # Optional, to map SQL files to the container
+    ports:
+      - "5433:5432"
+    networks:
+      - postgres_net
+    restart: unless-stopped
+    dns:
+      - 8.8.8.8  # Google's DNS server
+
+volumes:
+  pgdata_postgres:
+
+networks:
+  postgres_net:
