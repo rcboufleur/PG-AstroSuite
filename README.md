@@ -19,7 +19,7 @@ PG-AstroSuite is a specialized PostgreSQL-based Docker setup tailored for astron
 
 1. **Clone the Repository**:
     ```bash
-    git clone https://github.com/your-repo/PG-AstroSuite.git
+    git clone https://github.com/rcboufleur/PG-AstroSuite.git
     cd PG-AstroSuite
     ```
 
