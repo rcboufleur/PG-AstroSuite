@@ -46,7 +46,7 @@ You can connect to the PG-AstroSuite database using the PostgreSQL command-line 
 - Open your terminal.
 - Run the following command to start a PostgreSQL shell:
   ```bash
-  psql -h localhost -p 5432 -U postgres -d surveydb
+  psql -h localhost -p 5433 -U postgres -d surveydb
 
 ### Key SQL Files
 
