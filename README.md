@@ -41,13 +41,12 @@ PG-AstroSuite is a specialized PostgreSQL-based Docker setup tailored for astron
 
 ### Connecting to the Database
 
-You can connect to the database using the following details:
+You can connect to the PG-AstroSuite database using the PostgreSQL command-line interface by following these steps:
 
-- **Host**: `localhost` (or the appropriate Docker network IP)
-- **Port**: `5432`
-- **Username**: `postgres`
-- **Password**: [Your Password]
-- **Database Name**: `surveydb`
+- Open your terminal.
+- Run the following command to start a PostgreSQL shell:
+  ```bash
+  psql -h localhost -p 5432 -U postgres -d surveydb
 
 ### Key SQL Files
 
